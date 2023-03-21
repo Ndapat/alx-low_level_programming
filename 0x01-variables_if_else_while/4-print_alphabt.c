@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point
@@ -9,18 +8,11 @@
 
 int min(void)
 {
-	int ch;
+	char ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		if (ch != 'e' && ch != 'q')
-		{
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+		if (ch != 'q' && ch != 'e')
 			putchar (ch);
-		}
-		else
-		{
-		}
-	}
 	putchar("\n);
 	return (0);
 }
