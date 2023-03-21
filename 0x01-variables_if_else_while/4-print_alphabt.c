@@ -6,7 +6,7 @@
  * Return: Always 0
  */
 
-int min(void)
+int main(void)
 {
 	char ch;
 
