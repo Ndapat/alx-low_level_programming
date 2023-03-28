@@ -3,29 +3,27 @@
  * print_triangle - prints a triangle, followed by a new line
  * @size: size of the triangle
  */
-void print_triangle(int size)
+
+void print_triangle(int n)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		int i, j;
+	int h, tri;
 
-		for (i = 1; i <= size; i++)
+	if (n > 0)
+	{
+		for (h = 1; h <= n; h++)
 		{
-			for (j = i; j < size; j++)
-			{
-				_putchar(' ');
-			}
+			for (tri = n - h; tri > 0; tri--)
+				_putchar('');
 
-			for (j = 1; j <= i; j++)
-			{
+			for (tri = 0; tri < h; tri++)
 				_putchar('#');
-			}
+
+			if (h == n)
+				continue;
 
 			_putchar('\n');
 		}
 	}
+
+	_putchar('\n');
 }
